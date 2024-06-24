@@ -1,0 +1,7 @@
+<odoo>
+    <template id="assets_backend" name="menu_color_change assets" inherit_id="web.layout">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="/menu_color_change/static/src/css/menu_color.css"/>
+        </xpath>
+    </template>
+</odoo>
