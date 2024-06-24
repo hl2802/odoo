@@ -17,6 +17,18 @@
     border-color: #eac43d; /* Màu đường viền */
 }
 
+.btn-outline-primary {
+    color: #eac43d;
+    border-color: #eac43d;
+}
+
+.btn-outline-primary:hover {
+    color: #FFFFFF;
+    background-color: #ffac00;
+    border-color: #ffac00;
+}
+
+
 /* Cấu hình chung cho các nút */
 .btn, .button {
     display: inline-block; /* Hiển thị inline-block */
