@@ -1,0 +1,8 @@
+<odoo>
+    <template id="assets_backend" name="custom_theme_color assets" inherit_id="web.layout">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="/custom_theme_color/static/src/css/custom_theme.css"/>
+            <script type="text/javascript" src="/custom_theme_color/static/src/js/custom_theme.js"></script>
+        </xpath>
+    </template>
+</odoo>

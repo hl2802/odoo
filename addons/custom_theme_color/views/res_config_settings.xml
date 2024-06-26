@@ -1,0 +1,15 @@
+<odoo>
+    <record id="view_res_config_settings_form_inherit" model="ir.ui.view">
+        <field name="name">res.config.settings.theme.color</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.view_res_config_settings"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='external_header']" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <label for="theme_color" class="col-form-label">Theme Color</label>
+                    <input type="color" name="theme_color" t-att-value="theme_color" class="o_input o_field_widget o_field_char o_input_color_picker" placeholder="#190b68e5"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

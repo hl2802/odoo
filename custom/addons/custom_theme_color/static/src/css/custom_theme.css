@@ -1,0 +1,17 @@
+/* Các CSS mặc định sẽ được thay đổi bởi JavaScript */
+:root {
+    --theme-color: #190b68e5;
+}
+
+.o_main_navbar {
+    background-color: var(--theme-color);
+    border-bottom: 1px solid var(--theme-color);
+    color: #fff;
+}
+
+/* Cấu hình các thành phần khác */
+.btn-primary {
+    color: #FFFFFF;
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+}
