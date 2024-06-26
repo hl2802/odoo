@@ -1,31 +1,31 @@
 /* Thay đổi màu nền và màu chữ của header */
 .o_main_navbar {
-    background-color: #eac43d; /* Màu nền */
-    border-bottom: 1px solid #eac43d; /* Đường viền dưới */
+    background-color: #190b68e5; /* Màu nền */
+    border-bottom: 1px solid #190b68e5; /* Đường viền dưới */
     color: #fff; /* Màu chữ */
 }
 
 .o_main_navbar .o_menu_sections .o_nav_entry, .o_main_navbar .o_menu_sections .dropdown-toggle {
-    background: var(--NavBar-entry-backgroundColor, #eac43d); /* Màu nền của các mục menu và nút dropdown */
+    background: var(--NavBar-entry-backgroundColor, #190b68e5); /* Màu nền của các mục menu và nút dropdown */
     border: 1px solid transparent; /* Đường viền trong suốt */
 }
 
 /* Cấu hình cho nút chính (btn-primary) */
 .btn-primary {
     color: #FFFFFF; /* Màu chữ */
-    background-color: #eac43d; /* Màu nền */
-    border-color: #eac43d; /* Màu đường viền */
+    background-color: #190b68e5; /* Màu nền */
+    border-color: #190b68e5; /* Màu đường viền */
 }
 
 .btn-outline-primary {
-    color: #eac43d;
-    border-color: #eac43d;
+    color: #190b68e5;
+    border-color: #190b68e5;
 }
 
 .btn-outline-primary:hover {
     color: #FFFFFF;
-    background-color: #ffac00;
-    border-color: #ffac00;
+    background-color: #04002c;
+    border-color: #04002c;
 }
 
 
@@ -39,7 +39,7 @@
 
 /* Cấu hình cho nút viền ngoài màu xám (btn-outline-secondary) */
 .btn-outline-secondary {
-    color: #eac43d; /* Màu chữ */
+    color: #190b68e5; /* Màu chữ */
     background-color: transparent; /* Màu nền trong suốt */
     border-color: #dee2e6; /* Màu đường viền */
 }
@@ -47,41 +47,41 @@
 /* Hiệu ứng khi rê chuột lên nút chính */
 .btn-primary:hover {
     color: #FFFFFF; /* Màu chữ khi rê chuột */
-    background-color: #ffac00; /* Màu nền khi rê chuột */
-    border-color: #ffac00; /* Màu đường viền khi rê chuột */
+    background-color: #04002c; /* Màu nền khi rê chuột */
+    border-color: #04002c; /* Màu đường viền khi rê chuột */
 }
 
 /* Cấu hình cho ô chọn đã được chọn (checked) */
 .form-check-input:checked {
-    background-color: #eac43d; /* Màu nền */
-    border-color: #eac43d; /* Màu đường viền */
+    background-color: #190b68e5; /* Màu nền */
+    border-color: #190b68e5; /* Màu đường viền */
 }
 
 /* Cấu hình màu chữ cho các giá trị thống kê trong ô nút form */
 .o-form-buttonbox .o_pie_value, .o-form-buttonbox .oe_stat_button .o_stat_info .o_stat_value, .o-form-buttonbox .oe_stat_button > span .o_stat_value, .o-form-buttonbox .oe_stat_button .o_field_statinfo .o_stat_value {
-    color: var(--o-stat-text-color, #eac43d); /* Màu chữ thống kê */
+    color: var(--o-stat-text-color, #190b68e5); /* Màu chữ thống kê */
 }
 
 /* Cấu hình màu chữ cho biểu tượng trong ô nút form */
 .o-form-buttonbox .oe_stat_button .o_button_icon {
-    color: var(--o-stat-button-color, #eac43d); /* Màu chữ biểu tượng */
+    color: var(--o-stat-button-color, #190b68e5); /* Màu chữ biểu tượng */
 }
 
 /* Cấu hình màu chữ chính (text-primary) */
 .text-primary {
     --color: RGBA(113, 99, 158, var(--text-opacity, 1)); /* Màu chữ mặc định */
-    color: rgb(234, 196, 61) !important; /* Màu chữ thay đổi */
+    color: rgb(26, 6, 97) !important; /* Màu chữ thay đổi */
 }
 
 /* Cấu hình màu chữ cho hành động (text-action) */
 .text-action {
     --color: RGBA(113, 99, 158, var(--text-opacity, 1)); /* Màu chữ mặc định */
-    color: #eac43d !important; /* Màu chữ thay đổi */
+    color: #190b68e5 !important; /* Màu chữ thay đổi */
 }
 
 /* Cấu hình cho chỉ báo tải (loading indicator) */
 .o_loading_indicator {
     border-radius: 10px; /* Bo góc */
-    background-color:  #eac43d; /* Màu nền */
+    background-color:  #190b68e5; /* Màu nền */
     color: white; /* Màu chữ */
 }
