@@ -1,0 +1,38 @@
+<odoo>
+    <!-- Menu Definition -->
+    <menuitem id="menu_project_department_root" name="Phòng Ban" sequence="10"/>
+    <menuitem id="menu_project_department" name="Phòng Ban" parent="menu_project_department_root" action="action_project_department"/>
+
+    <!-- Action Definition -->
+    <record id="action_project_department" model="ir.actions.act_window">
+        <field name="name">Phòng Ban</field>
+        <field name="res_model">hr.department</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_department_tree" model="ir.ui.view">
+        <field name="name">department.tree</field>
+        <field name="model">hr.department</field>
+        <field name="arch" type="xml">
+            <tree string="Phòng Ban">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_department_form" model="ir.ui.view">
+        <field name="name">department.form</field>
+        <field name="model">hr.department</field>
+        <field name="arch" type="xml">
+            <form string="Phòng Ban">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

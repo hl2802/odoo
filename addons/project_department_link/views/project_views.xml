@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+        <!-- Form view for project with department field -->
+        <record id="view_project_form_inherit" model="ir.ui.view">
+            <field name="name">project.project.form.inherit</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group" position="after">
+                    <group>
+                        <field name="department_id"/>
+                        <field name="responsible_department_id"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Tree view for project with department field -->
+        <record id="view_project_tree_inherit" model="ir.ui.view">
+            <field name="name">project.project.tree.inherit</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.view_project"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="inside">
+                    <field name="department_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Action to view projects by department -->
+        <record id="action_view_projects_by_department" model="ir.actions.act_window">
+            <field name="name">Projects</field>
+            <field name="res_model">project.project</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('department_id', '=', active_id)]</field>
+        </record>
+
+        <!-- Form view for department with related projects -->
+        <record id="view_department_form_inherit" model="ir.ui.view">
+            <field name="name">hr.department.form.inherit</field>
+            <field name="model">hr.department</field>
+            <field name="inherit_id" ref="hr.view_department_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="inside">
+                    <group>
+                        <field name="project_ids" context="{'default_department_id': active_id}" nolabel="1">
+                            <tree>
+                                <field name="name"/>
+                                <field name="user_id"/>
+                                <field name="date_start"/>
+                                <field name="date_end"/>
+                            </tree>
+                            <form>
+                                <sheet>
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="department_id"/>
+                                        <field name="user_id"/>
+                                        <field name="date_start"/>
+                                        <field name="date_end"/>
+                                    </group>
+                                </sheet>
+                            </form>
+                        </field>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

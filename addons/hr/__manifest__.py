@@ -17,6 +17,8 @@
         'mail',
         'resource',
         'web',
+        'project',
+        
     ],
     'data': [
         'security/hr_security.xml',
